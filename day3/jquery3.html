@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>assignment3 day3</title>
+</head>
+<body>
+    <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus rem facere debitis, sapiente enim at aspernatur. Omnis, nulla sequi repudiandae qui reprehenderit quisquam molestiae eius consequatur dicta cum rem error?       </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla ut asperiores reprehenderit accusantium non commodi. Assumenda voluptatibus sapiente iusto nesciunt ipsa harum earum cumque blanditiis, corrupti iure rerum deleniti?</p>
+    <h1 >I am heading one</h1>
+    <h1>i am also h1</h1>
+    <h2>I an heading two</h2>
+    <h2>i am also heading 2</h2>
+    <script>
+        $(document).ready(function()
+        {
+            $('p').click(function()
+            {
+                $(this).hide()
+            })
+            $('h1').click(function()
+            {
+                $(this).css('color','red')
+            })
+            $('h2').click(function()
+            {
+                $(this).css('color','green')
+            })
+        })
+
+    </script>
+</body>
+</html>

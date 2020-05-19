@@ -7,5 +7,24 @@
 </head>
 <body>
     <h1>hi test file</h1>
+    Number 1<input type="number" id="num1" size="20">
+    <br>
+    Number 2<input type="number" id="num2" size="20">
+    <br>
+    product<input type="button" id="button" onclick="product()">
+    <script>
+        function product()
+        {
+          var m=document.getElementById("num1");
+          var n=document.getElementById("num2");
+          if(n.value && m.value)
+          {n=parseInt(n.value)
+          m=parseInt(m.value);
+              alert("answer is"+m*n)
+          }
+          else
+          alert("please enter the value of num1 and num2")
+        }
+     </script>   
 </body>
 </html>

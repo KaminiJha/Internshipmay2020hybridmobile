@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day3</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    number<input id="num"type="number" size="20">
+    <br>
+    <hr>
+
+    result<input type="number" id="result" size="20">
+    <br>
+    <hr>
+    
+    <input type="button" value="factorial" id="fact">
+
+
+    <script>
+        $(document).ready(function(){
+          
+            $('#fact').click(function()
+            {
+             var num=$('#num').val();
+            fact=1;
+            for(i=1;i<=num;i++)
+            {
+                fact=fact*i;
+            }
+            $('#result').val(fact);
+            })
+        })
+
+    </script>
+</body>
+</html>

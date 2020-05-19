@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>day3assignment1</title>
+</head>
+<body>
+    Number<input id="num"type="number" size="20">
+    <br>
+    <!-- Result<input id="result"type="number" size="20"> -->
+    <hr>
+    Result<span id="result"></span>
+    <hr>
+    <br>
+    Square  <input type="button" id="square">
+    Cube   <input type="button" id="cube">
+
+    <script>
+        $(document).ready(function(){
+        $('#square').click(function()
+        { 
+        var num=$('#num').val();
+        var square="<h1>Sqare is"+num*num+"</h1>"
+        $('#result').html(square);
+        })
+
+         $('#cube').click(function()
+         {
+        var num=$('#num').val();
+          var cube="<h1>cube is"+num*num*num+"</h1>"
+          $('#result').html(cube);
+        })
+      })
+    </script>
+
+
+    
+</body>
+</html>
