@@ -30,6 +30,9 @@
     line-height:50px;
     margin-top:15px;
 }
+h2{
+    text-align:center;
+}
 .row{
     width:100%;
     margin-bottom:10px;
@@ -53,7 +56,7 @@
 .right{
     width:60%;
 }
-#add{
+#add ,#search{
     width:60%;
     text-align:center;
     color:white;
